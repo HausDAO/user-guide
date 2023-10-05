@@ -13,8 +13,17 @@ const config: DocsThemeConfig = {
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title} />
-        <meta property="og:description" content={frontMatter.description} />
+        <meta
+          property="og:title"
+          content={frontMatter.title || 'DAOhaus User Guide'}
+        />
+        <meta
+          property="og:description"
+          content={
+            frontMatter.description ||
+            'The Protocol for Purpose-Driven Governance'
+          }
+        />
       </>
     );
   },
