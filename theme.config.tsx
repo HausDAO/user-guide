@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
     const url =
-      'https://user-guide-ten.vercel.app/' +
+      'https://guide.daohaus.club/' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
@@ -179,12 +179,12 @@ const config: DocsThemeConfig = {
     defaultTheme: 'dark',
   },
   project: {
-    link: 'https://github.com/HausDAO/',
+    link: 'https://github.com/HausDAO/user-guide',
   },
   chat: {
     link: 'https://discord.gg/daohaus',
   },
-  docsRepositoryBase: 'https://github.com/HausDAO/',
+  docsRepositoryBase: 'https://github.com/HausDAO/user-guide',
   sidebar: {
     defaultMenuCollapseLevel: 1,
   },
