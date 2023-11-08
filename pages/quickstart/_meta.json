@@ -1,5 +1,6 @@
 {
   "signal": "Submit a Proposal",
   "member": "Add a Member",
-  "transfer": "Transfer Tokens"
+  "transfer": "Transfer Tokens",
+  "migrate": "Migrate v2 to v3"
 }
