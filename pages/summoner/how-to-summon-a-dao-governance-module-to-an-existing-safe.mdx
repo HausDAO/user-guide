@@ -1,0 +1,88 @@
+# How to Summon a DAO Governance Module to an existing Safe
+
+If you already have a Safe multisig, you can plugin a MolochV3 DAO Governance as a module In this tutorial, we walk you through the process of deploying DAO contracts with DAOhaus v3.
+
+## Open the Safe Wallet UI
+
+Go to [https://app.safe.global/](https://app.safe.global/) and select the Safe you want to work with.
+
+## Open Custom Safe App Modal
+
+Navigate to Apps > My Custom apps > Add custom Safe App
+
+![safe-wallet-custom-apps](/assets/safe-app/safe-wallet-custom-apps.png)
+
+## Add DAOHaus: DAO Launcher App
+
+Add `https://safe-summon.daohaus.club` DAOHaus SafeApp URL and accept the user agreement. Then click on the Add button.
+
+![add-custom-safe-app](/assets/safe-app/add-custom-safe-app.png)
+
+Finally, the DAOHaus App should be listed in the Safe Wallet UI. Open it and continue to the next steps.
+
+![daohaus-dao-launcher](/assets/safe-app/daohaus-dao-launcher.png)
+
+## Connect Your Wallet
+
+Once you opened the Safe App, you'll need to connect your wallet to the desired blockchain network. You'll see a list of DAO modules on your Safe and a button if you're looking to summon one.
+
+![daohaus-safeapp](/assets/safe-app/daohaus-safeapp.png)
+
+![daohaus-safeapp-summon-form](/assets/safe-app/daohaus-safeapp-summon-form.png)
+
+## Name Your DAO
+
+Once the summon form is displayed, it's time to name your DAO. Pick a name that truly encapsulates your DAO's spirit! The name you choose is stored in [metadata](../glossary#metadata) and can be altered later.
+
+![dao-name](/assets/safe-app/daohaus-safeapp-dao-name.png)
+
+## Define Your Tokens
+
+Next, you'll need to provide names for your DAO's [voting](../glossary#voting-tokens) and [non-voting](../glossary#non-voting-tokens) tokens. The symbols are abbreviated names used in wallets and apps and cannot be longer than 5 characters. Keep in mind these tokens are deployed on-chain and cannot be changed later. Finally, decide if you wish to make these tokens transferrable. Traditionally, Moloch DAO tokens are soulbound and we recommend starting with Not Transferable. Allowing transfers empowers DAO members to move their voting or non-voting stakes to other accounts. If necessary, this setting can be adjusted after summoning via a proposal.
+
+![define-tokens](/assets/safe-app/daohaus-safeapp-stake-tokens.png)
+
+## Set Proposal Timing
+
+Next up is setting your DAO's proposal timings, including the [voting period](../glossary#voting-period) (how long proposals are open for voting) and the [grace period](../glossary#grace-period) (the time between a passing proposal and execution, allowing members to exit if they disagree with the outcome). Don't worry too much, as these timings can be adjusted later with a proposal. Keeping periods shorter when you summon makes it easier to change things while getting started. But longer periods increase the security of your organization.
+
+![proposal-timing](/assets/safe-app/daohaus-safeapp-proposal-timing.png)
+
+## Customize Advanced Governance
+
+Now, it's time to tweak your DAO's advanced settings.
+
+- The [Quorum %](../glossary#quorum) determines the minimum percentage of DAO members required to vote for proposal approval.
+- [Minimum Retention %](../glossary#minimum-retention) establishes the percentage of members required to stay in the DAO after the grace period for a proposal to be executed.
+- [Sponsor Threshold](../glossary#sponsor-threshold) sets the minimum number of voting stake tokens a member needs to sponsor a proposal.
+- [New Offering](../glossary#new-offering) defines a fee required to submit proposals, helping to guard against spam.
+
+Setting a Quorum % can make it difficult to get proposals passed if members are not actively engaged. It is usually not necessary with the optimistic style governance of Moloch v3.
+
+Adding a Sponsor Threshold of 1 requires a member to sponsor proposals submitted by non-members. This is generally a good practice. Propoals submitted by members with more voting tokens than the threshold are auto-sponosred.
+
+These settings can be adjusted later with a proposal so the DAO can make intentional decisions on what settings are most appropriate for the community.
+
+![advanced-governance](/assets/safe-app/daohaus-safeapp-advanced-governance.png)
+
+## Add Starting Members
+
+Every DAO needs at least one member! You'll probably add your own address here, along with other initial members. To add a member, simply enter their address and the number of voting and non-voting token they'll receive. If you prefer a csv-like format, toggle to `Bulk mode` so each address and token amounts must be on a separate line. Additional members can be added through proposals after the DAO is summoned.
+
+![starting-members](/assets/safe-app/daohaus-safeapp-starting-members.png)
+
+## Appoint Starting Shamans
+
+[Shamans](../glossary#shaman) play a crucial role in Moloch v3 (Baal). They are separate contracts approved by the DAO, and they hold the power to make key changes to the DAO outside of the proposal process. However, these are advanced features and not applicable to most DAOs in the beginning. For more details on adding Shamans, check out the [Moloch v3 (Baal) docs](https://moloch.daohaus.fun/tools/shaman).
+
+![starting-shamans](/assets/safe-app/daohaus-safeapp-starting-shamans.png)
+
+## Review and Summon
+
+Lastly, review all your settings for accuracy. Once everything is in order, click the **Summon DAO** button and sign the transaction through the Safe UI. Once required signatures are collected and transaction is executed, your DAO contract will be deployed to the network your Safe lives. Once processed, click the "DAOs" tab at the top find a link to your newly created organization!
+
+![summoned](/assets/safe-app/daohaus-safeapp-summoned-dao.png)
+
+**Congratulations, you have successfully summoned a Moloch v3 contract connected to your Safe on DAOhaus!**
+
+Stay tuned as we delve into how to customize and manage your newly born DAO in the next section.
