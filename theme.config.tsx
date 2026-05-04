@@ -189,7 +189,9 @@ const config: DocsThemeConfig = {
       </span>
     </>
   ),
-  primaryHue: 337,
+  color: {
+    hue: 337,
+  },
   faviconGlyph: "🏰",
   nextThemes: {
     defaultTheme: "dark",
@@ -211,13 +213,13 @@ const config: DocsThemeConfig = {
     title: "In This Chapter",
   },
   editLink: {
-    text: "Edit Page",
+    content: "Edit Page",
   },
   feedback: {
     content: "Provide Feedback",
   },
   footer: {
-    text: <span className="manofa-text">DAOhaus User Guide</span>,
+    content: <span className="manofa-text">DAOhaus User Guide</span>,
   },
 };
 
