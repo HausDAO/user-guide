@@ -4,7 +4,7 @@ In this tutorial, we walk you through the process of deploying DAO contracts wit
 
 ## Connect Your Wallet
 
-Firstly, visit the [Summon App](https://summon.daohaus.club/). Here, you'll need to connect your wallet to the desired blockchain network.
+Firstly, visit the [Admin App](https://admin.daohaus.club/summon). Here, you'll need to connect your wallet to the desired blockchain network.
 
 ![wallet-connect](https://github.com/0xBootleggers/user-guide/assets/522182/a8e8d7ee-5a4a-4ff5-af84-9d03e9809f14)
 
@@ -14,13 +14,13 @@ Firstly, visit the [Summon App](https://summon.daohaus.club/). Here, you'll need
 
 ## Name Your DAO
 
-Once your wallet is connected, it's time to name your DAO. Pick a name that truly encapsulates your DAO's spirit! The name you choose is stored in [metadata](../glossary#metadata) and can be altered later.
+Once your wallet is connected, it's time to name your DAO. Pick a name that truly encapsulates your DAO's spirit! The name you choose is stored in [metadata](../../glossary#metadata) and can be altered later.
 
 ![dao-name](https://github.com/0xBootleggers/user-guide/assets/522182/276014a6-259c-41c2-aed4-5a0e14a7f75d)
 
 ## Define Your Tokens
 
-Next, you'll need to provide names for your DAO's [voting](../glossary#voting-tokens) and [non-voting](../glossary#non-voting-tokens) tokens. The symbols are abbreviated names used in wallets and apps and cannot be longer than 5 characters. Keep in mind these tokens are deployed on-chain and cannot be changed later.
+Next, you'll need to provide names for your DAO's [voting](../../glossary#voting-tokens) and [non-voting](../../glossary#non-voting-tokens) tokens. The symbols are abbreviated names used in wallets and apps and cannot be longer than 5 characters. Keep in mind these tokens are deployed on-chain and cannot be changed later.
 
 ![define-tokens](https://github.com/0xBootleggers/user-guide/assets/522182/fd43071f-070e-446e-82be-7375acce7963)
 
@@ -30,7 +30,7 @@ Following this, decide if you wish to make these tokens transferrable. Tradition
 
 ## Set Proposal Timing
 
-Next up is setting your DAO's proposal timings, including the [voting period](../glossary#voting-period) (how long proposals are open for voting) and the [grace period](../glossary#grace-period) (the time between a passing proposal and execution, allowing members to exit if they disagree with the outcome). Don't worry too much, as these timings can be adjusted later with a proposal. Keeping periods shorter when you summon makes it easier to change things while getting started. But longer periods increase the security of your organization.
+Next up is setting your DAO's proposal timings, including the [voting period](../../glossary#voting-period) (how long proposals are open for voting) and the [grace period](../../glossary#grace-period) (the time between a passing proposal and execution, allowing members to exit if they disagree with the outcome). Don't worry too much, as these timings can be adjusted later with a proposal. Keeping periods shorter when you summon makes it easier to change things while getting started. But longer periods increase the security of your organization.
 
 ![proposal-timing](https://github.com/0xBootleggers/user-guide/assets/522182/8d2b2f20-a78a-48b9-8c79-922457d0f095)
 
@@ -38,14 +38,14 @@ Next up is setting your DAO's proposal timings, including the [voting period](..
 
 Now, it's time to tweak your DAO's advanced settings.
 
-- The [Quorum %](../glossary#quorum) determines the minimum percentage of DAO members required to vote for proposal approval.
-- [Minimum Retention %](../glossary#minimum-retention) establishes the percentage of members required to stay in the DAO after the grace period for a proposal to be executed.
-- [Sponsor Threshold](../glossary#sponsor-threshold) sets the minimum number of voting stake tokens a member needs to sponsor a proposal.
-- [New Offering](../glossary#new-offering) defines a fee required to submit proposals, helping to guard against spam.
+- The [Quorum %](../../glossary#quorum) determines the minimum percentage of DAO members required to vote for proposal approval.
+- [Minimum Retention %](../../glossary#minimum-retention) establishes the percentage of members required to stay in the DAO after the grace period for a proposal to be executed.
+- [Sponsor Threshold](../../glossary#sponsor-threshold) sets the minimum number of voting stake tokens a member needs to sponsor a proposal.
+- [New Offering](../../glossary#new-offering) defines a fee required to submit proposals, helping to guard against spam.
 
 Setting a Quorum % can make it difficult to get proposals passed if members are not actively engaged. It is usually not necessary with the optimistic style governance of Moloch v3.
 
-Adding a Sponsor Threshold of 1 requires a member to sponsor proposals submitted by non-members. This is generally a good practice. Propoals submitted by members with more voting tokens than the threshold are auto-sponosred.
+Adding a Sponsor Threshold of 1 requires a member to sponsor proposals submitted by non-members. This is generally a good practice. Proposals submitted by members with more voting tokens than the threshold are auto-sponsored.
 
 These settings can be adjusted later with a proposal so the DAO can make intentional decisions on what settings are most appropriate for the community.
 
@@ -59,7 +59,7 @@ Every DAO needs at least one member! You'll probably add your own address here, 
 
 ## Appoint Starting Shamans
 
-[Shamans](../glossary#shaman) play a crucial role in Moloch v3 (Baal). They are separate contracts approved by the DAO, and they hold the power to make key changes to the DAO outside of the proposal process. However, these are advanced features and not applicable to most DAOs in the beginning. For more details on adding Shamans, check out the [Moloch v3 (Baal) docs](https://moloch.daohaus.fun/tools/shaman).
+[Shamans](../../glossary#shaman) play a crucial role in Moloch v3 (Baal). They are separate contracts approved by the DAO, and they hold the power to make key changes to the DAO outside of the proposal process. However, these are advanced features and not applicable to most DAOs in the beginning. For more details on adding Shamans, check out the [Moloch v3 (Baal) docs](https://moloch.daohaus.fun/tools/shaman).
 
 ![starting-shamans](https://github.com/0xBootleggers/user-guide/assets/522182/1781ba95-99e9-48cd-ab00-891408d93555)
 
