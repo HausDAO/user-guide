@@ -1,0 +1,7 @@
+export default {
+  index: 'Welcome',
+  quickstart: 'Quickstart',
+  admin: 'How To',
+  glossary: 'Glossary',
+  community: 'Community Links',
+}

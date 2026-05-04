@@ -1,0 +1,10 @@
+export default {
+  summon: 'Summon a DAO',
+  hub: 'Hub',
+  dao: 'DAO',
+  proposals: 'Proposals',
+  safes: 'Safes',
+  members: 'Members',
+  settings: 'Settings',
+  profile: 'Profile',
+}
