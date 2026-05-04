@@ -1,0 +1,7 @@
+export default {
+  signal: 'Submit a Proposal',
+  member: 'Add a Member',
+  transfer: 'Transfer Tokens',
+  migrate: 'Migrate v2 to v3',
+  networks: 'Supported Networks',
+}
